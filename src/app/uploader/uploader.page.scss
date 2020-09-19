@@ -1,0 +1,14 @@
+.fileBtn {
+    opacity: 0;
+    position: absolute;
+    top: -100em;
+    left: -100em;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}

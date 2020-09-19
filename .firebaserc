@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "socialapp-9d73b": {
+      "hosting": {
+        "app": [
+          "socialapp-9d73b"
+        ]
+      }
+    }
+  }
+}

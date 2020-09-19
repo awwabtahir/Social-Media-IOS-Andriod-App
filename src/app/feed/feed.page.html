@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>feed</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let post of posts">
+    <ion-img (click)="goTo(post.postId)" src="{{ post.image }}"></ion-img>
+  </ion-card>
+
+</ion-content>

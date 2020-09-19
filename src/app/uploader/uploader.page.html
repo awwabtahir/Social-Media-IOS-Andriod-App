@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>uploader</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <app-loading *ngIf="busy"></app-loading>
+
+  <div class="center" *ngIf="!busy">
+    <input type="file" *ngIf="!downUrl" (change)="fileChanged($event)" class="fileBtn" #fileButton>
+
+    <ion-button shape="round" color="primary" (click)="uploadFile()" *ngIf="!downUrl" fill="outline">Upload File</ion-button>
+
+    <div *ngIf="!downUrl">{{ uploadPercent | async }}</div>
+
+    <ion-card *ngIf="downUrl">
+      <img src="{{ downUrl }}">
+      <ion-card-content>
+        <ion-textarea placeholder="Enter some description" [(ngModel)]="desc"></ion-textarea>
+        <ion-button shape="round" color="primary" (click)="createPost()">POST</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

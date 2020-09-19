@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-loading *ngIf="!userPosts"></app-loading>
+
+  <div class="images" *ngIf="userPosts">
+    <div class="image" *ngFor="let post of userPosts">
+        <img (click)="goTo(post.postId)" src="{{ post.image }}" class="postImg">
+    </div>
+  </div>
+</ion-content>
