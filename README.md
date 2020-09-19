@@ -4,6 +4,12 @@ This is a simple social media app created using Cross Platform App Development p
 See the live version here: https://socialapp-9d73b.web.app/  
   
 This app is created using Ionic 4, Angular 10, and Firebase.
+
+To get started with this app, follow these steps:
+1. Clone the repository
+2. Run "npm install" to install all dependencies
+3. Run "ionic serve --lab" and this would open the app in the browser
+ 
 ## Features of App
 1.  User authentication using Firebase Authentication
 2.  Allow users to log in and register
